@@ -1,4 +1,4 @@
-# ts-note — Minimal · Fast · Elegant 📝
+# Ts-Note
 
 A simple, fast, and elegant note-taking web app built with SvelteKit.
 
