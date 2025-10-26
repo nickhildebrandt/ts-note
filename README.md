@@ -2,16 +2,12 @@
 
 A simple, fast, and elegant note-taking web app built with SvelteKit.
 
----
-
 ## Short description
 ts-note is a minimal, self-hostable note app for personal and shared notes. It
 includes user authentication, group-based sharing, and timed/planned notes
 (e.g., recurring list items that reappear automatically). The app runs entirely
 inside a single Docker/Podman container and depends only on SvelteKit,
 DrizzleORM, Tailwind CSS, and SQLite.
-
----
 
 ## Features ✨
 - Full Markdown support with live preview
@@ -24,8 +20,6 @@ DrizzleORM, Tailwind CSS, and SQLite.
 - Timed / planned (recurring) notes — smart recurring list items and tasks
 - Single-container deployment (Docker/Podman) for easy hosting
 
----
-
 ## Installation (quick)
 1. Clone the repo:
    ```bash
@@ -33,8 +27,6 @@ DrizzleORM, Tailwind CSS, and SQLite.
    cd ts-note
    ```
 2. Adjust local configuration (e.g. .env, DATABASE_URL) as needed.
-
----
 
 ## Development — quick start
 Install dependencies and run the dev server:
@@ -53,8 +45,6 @@ bunx drizzle-kit push
 
 Note: Configure your SQLite path and env vars (DATABASE_URL) before running migrations.
 
----
-
 ## Build & run in Podman / Docker
 Build an image and run the container (exposes port 3000):
 ```bash
@@ -67,8 +57,6 @@ Docker equivalents also work: `docker build` / `docker run`.
 Tips:
 - Persist the SQLite database with a host volume: `-v ./data:/app/data`
 - Pass env vars to the container via `-e` or an .env mechanism
-
----
 
 ## Configuration
 - DATABASE_URL (SQLite path) — configure via env
