@@ -29,21 +29,23 @@ DrizzleORM, Tailwind CSS, and SQLite.
 2. Adjust local configuration (e.g. .env, DATABASE_URL) as needed.
 
 ## Development — quick start
-Install dependencies and run the dev server:
+Install dependencies and run the dev server (npm/node):
 ```bash
 # Development
-bun install
-bun run dev
+npm install
+npm run dev
 ```
 
-Generate and push Drizzle ORM schema/migrations:
+Generate and push Drizzle ORM schema/migrations (use the npm scripts defined in package.json):
 ```bash
 # Drizzle ORM
-bunx drizzle-kit generate
-bunx drizzle-kit push
+npm run db:generate
+npm run db:push
 ```
 
 Note: Configure your SQLite path and env vars (DATABASE_URL) before running migrations.
+
+Tip: This project targets modern Node.js. Use Node 18+ or a compatible LTS for best compatibility.
 
 ## Build & run in Podman / Docker
 Build an image and run the container (exposes port 3000):
